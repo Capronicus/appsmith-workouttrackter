@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "0.375rem",
-  "bottomRow": 5,
+  "bottomRow": 4,
   "boxShadow": "none",
   "defaultText": "{{Number(currentItem.reps)}}",
   "dynamicBindingPathList": [
@@ -67,7 +67,7 @@
   "rightColumn": 63,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 1,
+  "topRow": 0,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "szez9mtlz5",

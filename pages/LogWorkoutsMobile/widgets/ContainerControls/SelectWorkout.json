@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 6,
+  "bottomRow": 4,
   "boxShadow": "none",
   "defaultOptionValue": "",
   "dynamicBindingPathList": [
@@ -42,7 +42,7 @@
   "labelAlignment": "left",
   "labelPosition": "Left",
   "labelStyle": "BOLD",
-  "labelText": "Choose a Workout",
+  "labelText": "",
   "labelTextColor": "{{appsmith.theme.colors.backgroundColor}}",
   "labelTextSize": "0.875rem",
   "labelWidth": "11",
