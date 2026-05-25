@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO workout_templates (\n    name\n)\nSELECT\n    name || ' Copy'\nFROM workout_templates\nWHERE id = {{ tblWorkouts.selectedRow.id }}\nRETURNING id;",
+      "body": "INSERT INTO workout_templates (\n    name,\n    notes\n)\nSELECT\n    name || ' Copy',\n    notes\nFROM workout_templates\nWHERE id = {{ tblWorkouts.selectedRow.id }}\nRETURNING id;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

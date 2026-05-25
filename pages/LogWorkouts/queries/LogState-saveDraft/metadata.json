@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "6a117fe9f82c2160e8de0a3e_feffbcfb-49d5-4e40-ae6b-530f76ac38e4",
-  "id": "LogWorkouts_LogState.reset",
+  "gitSyncId": "6a14593c57b2571e58a6f1c9_3d1d4f23-a9fa-4efd-a23b-15027527b56f",
+  "id": "LogWorkouts_LogState.saveDraft",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
@@ -22,8 +22,8 @@
         "key": "body"
       }
     ],
-    "fullyQualifiedName": "LogState.reset",
-    "name": "reset",
+    "fullyQualifiedName": "LogState.saveDraft",
+    "name": "saveDraft",
     "pageId": "LogWorkouts",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false

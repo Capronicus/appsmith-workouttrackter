@@ -6,11 +6,6 @@
     "pageId": "LogWorkouts",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "variables": [
-      {
-        "name": "doneIds",
-        "value": "[]"
-      }
-    ]
+    "variables": []
   }
 }
