@@ -35,7 +35,7 @@
   "mobileRightColumn": 38,
   "mobileTopRow": 12,
   "needsErrorInfo": false,
-  "onClick": "{{\n(async () => {\n\n    const result = await DuplicateWorkoutTemplate.run();\n\n    await storeValue(\n        \"newTemplateId\",\n        result[0].id\n    );\n\n    await DuplicateWorkoutExercises.run();\n\n    await removeValue("newTemplateId");\n\n    await GetWorkouts.run();\n\n    showAlert(\n        \"Workout duplicated\",\n        \"success\"\n    );\n\n})()\n}}",
+  "onClick": "{{\n(async () => {\n\n    const result = await DuplicateWorkoutTemplate.run();\n\n    await storeValue(\n        \"newTemplateId\",\n        result[0].id\n    );\n\n    await DuplicateWorkoutExercises.run();\n\n    await removeValue(\"newTemplateId\");\n\n    await GetWorkouts.run();\n\n    showAlert(\n        \"Workout duplicated\",\n        \"success\"\n    );\n\n})()\n}}",
   "parentColumnSpace": 29.4375,
   "parentId": "2n65psmxp0",
   "parentRowSpace": 10,
