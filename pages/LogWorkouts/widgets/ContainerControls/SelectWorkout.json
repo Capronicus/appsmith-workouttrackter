@@ -58,7 +58,7 @@
   "mobileRightColumn": 21,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onOptionChange": "await LogState.clearStore();\nawait storeValue('selectedWorkoutId', SelectWorkout.value);\nawait GetSessionExercises.run();\nawait GetPreviousFeels.run();\nawait PreviousWorkoutNote.run();\nawait LoadDraft.run();\nawait LogState.restoreDraft();",
+  "onOptionChange": "const workoutId = SelectWorkout.selectedOptionValue;\n\nif (!workoutId) {\n  showAlert(\"No workout selected\", \"warning\");\n  return;\n}\n\nawait LogState.clearStore();\nawait storeValue(\"selectedWorkoutId\", workoutId);\n\nawait GetSessionExercises.run();\nawait GetPreviousFeels.run();\nawait PreviousWorkoutNote.run();\nawait LoadDraft.run();\nawait LogState.restoreDraft();",
   "optionLabel": "name",
   "optionValue": "id",
   "originalBottomRow": 7,
