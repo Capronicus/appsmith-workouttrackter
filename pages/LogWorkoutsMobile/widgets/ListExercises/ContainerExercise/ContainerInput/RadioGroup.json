@@ -2,7 +2,7 @@
   "accentColor": "#71717a",
   "alignment": "right",
   "animateLoading": true,
-  "bottomRow": 4,
+  "bottomRow": 8,
   "boxShadow": "none",
   "defaultOptionValue": "same",
   "dynamicBindingPathList": [
@@ -66,7 +66,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 63,
-  "topRow": 0,
+  "topRow": 4,
   "type": "RADIO_GROUP_WIDGET",
   "version": 1,
   "widgetId": "lwlm9f7ytt",

@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 5,
+  "bottomRow": 6,
   "boxShadow": "none",
   "defaultOptionValue": "",
   "dynamicBindingPathList": [
@@ -58,7 +58,7 @@
   "onOptionChange": "await LogState.clearStore();\nLogState.reset();\nawait GetSessionExercises.run();\nawait GetPreviousFeels.run();\nawait PreviousWorkoutNote.run();",
   "optionLabel": "name",
   "optionValue": "id",
-  "originalBottomRow": 6,
+  "originalBottomRow": 5,
   "originalTopRow": 0,
   "parentColumnSpace": 29.125,
   "parentId": "pru4nz16ki",
