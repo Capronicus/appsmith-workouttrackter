@@ -1,0 +1,8 @@
+INSERT INTO workout_templates (
+    name
+)
+SELECT
+    name || ' Copy'
+FROM workout_templates
+WHERE id = {{ tblWorkouts.selectedRow.id }}
+RETURNING id;

@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "6a117fe9f82c2160e8de0a3e_ab2d5898-3820-403a-bdc2-4885c0dedad5",
-  "id": "Workouts_DeleteWorkout",
+  "gitSyncId": "6a117fe9f82c2160e8de0a3e_acc72e06-5021-4060-b450-52c1a3e45a7a",
+  "id": "Workouts_DuplicateWorkoutTemplate",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "DELETE FROM workout_templates WHERE id = {{tblWorkouts.selectedRow.id}};",
+      "body": "INSERT INTO workout_templates (\n    name\n)\nSELECT\n    name || ' Copy'\nFROM workout_templates\nWHERE id = {{ tblWorkouts.selectedRow.id }}\nRETURNING id;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "name": "DeleteWorkout",
+    "name": "DuplicateWorkoutTemplate",
     "pageId": "Workouts",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false

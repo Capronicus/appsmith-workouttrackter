@@ -1,0 +1,17 @@
+INSERT INTO template_exercises (
+    template_id,
+    exercise_id,
+    default_sets,
+    default_reps,
+    default_weight,
+    display_order
+)
+SELECT
+    {{ appsmith.store.newTemplateId }},
+    exercise_id,
+    default_sets,
+    default_reps,
+    default_weight,
+    display_order
+FROM template_exercises
+WHERE template_id = {{ tblWorkouts.selectedRow.id }};

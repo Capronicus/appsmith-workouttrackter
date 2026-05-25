@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "6a117fe9f82c2160e8de0a3e_ab2d5898-3820-403a-bdc2-4885c0dedad5",
-  "id": "Workouts_DeleteWorkout",
+  "gitSyncId": "6a117fe9f82c2160e8de0a3e_7b7ffcf3-d4a1-4a7b-8068-2c2f99e9ffa5",
+  "id": "Workouts_DuplicateWorkoutExercises",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "DELETE FROM workout_templates WHERE id = {{tblWorkouts.selectedRow.id}};",
+      "body": "INSERT INTO template_exercises (\n    template_id,\n    exercise_id,\n    default_sets,\n    default_reps,\n    default_weight,\n    display_order\n)\nSELECT\n    {{ appsmith.store.newTemplateId }},\n    exercise_id,\n    default_sets,\n    default_reps,\n    default_weight,\n    display_order\nFROM template_exercises\nWHERE template_id = {{ tblWorkouts.selectedRow.id }};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "name": "DeleteWorkout",
+    "name": "DuplicateWorkoutExercises",
     "pageId": "Workouts",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false

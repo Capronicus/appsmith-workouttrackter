@@ -55,7 +55,7 @@
   "mobileRightColumn": 21,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onOptionChange": "{{\n(async () => {\n    await LogState.clearStore();\n    LogState.reset();\n\n    await GetSessionExercises.run();\n    await GetPreviousFeels.run();\n    await PreviousWorkoutNote.run();\n})()\n}}",
+  "onOptionChange": "await LogState.clearStore();\nLogState.reset();\nawait GetSessionExercises.run();\nawait GetPreviousFeels.run();\nawait PreviousWorkoutNote.run();",
   "optionLabel": "name",
   "optionValue": "id",
   "originalBottomRow": 5,
