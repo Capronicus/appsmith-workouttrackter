@@ -3,7 +3,8 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 15,
   "boxShadow": "none",
-  "buttonColor": "#7f1d1d",
+  "buttonColor": "#b91c1c",
+  "buttonStyle": "PRIMARY_BUTTON",
   "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
@@ -11,7 +12,6 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -23,28 +23,26 @@
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "55zpcga4s9",
-  "leftColumn": 46,
+  "key": "6538hcpyxp",
+  "leftColumn": 0,
   "minWidth": 120,
-  "mobileBottomRow": 16,
-  "mobileLeftColumn": 22,
-  "mobileRightColumn": 38,
-  "mobileTopRow": 12,
+  "mobileBottomRow": 22,
+  "mobileLeftColumn": 47,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{showModal(ModalDeleteExercise.name);}}",
-  "parentColumnSpace": 29.4375,
-  "parentId": "t58o3jbim4",
-  "parentRowSpace": 10,
+  "onClick": "{{DeleteFromWorkout.run().then(() => {\n  GetTemplateExercises.run();\n});}}",
+  "parentId": "mn6es0lchh",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 61,
-  "text": "Delete",
-  "topRow": 10,
+  "rightColumn": 23,
+  "text": "Yes and repeat",
+  "topRow": 11,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "cmkha5dzid",
-  "widgetName": "ButtonExerciseDelete"
+  "widgetId": "w1oddji1n6",
+  "widgetName": "Button2Copy"
 }

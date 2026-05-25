@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 4,
+  "bottomRow": 8,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -13,44 +13,39 @@
       "key": "borderRadius"
     },
     {
-      "key": "text"
-    },
-    {
       "key": "textColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "1rem",
+  "fontSize": "1.25rem",
   "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
-  "key": "2l109jdbei",
+  "key": "5ups3obmra",
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
   "mobileBottomRow": 5,
-  "mobileLeftColumn": 37,
-  "mobileRightColumn": 53,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 41,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
   "overflow": "NONE",
-  "parentColumnSpace": 20.984375,
-  "parentId": "20brshjoa3",
-  "parentRowSpace": 10,
+  "parentId": "nuw5lzb60c",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 63,
   "shouldTruncate": false,
-  "text": "{{ PreviousWorkoutNote.data?.[0]?.workout_notes || '' }}",
+  "text": "Delete Exercise?",
   "textAlign": "CENTER",
   "textColor": "{{appsmith.theme.colors.backgroundColor}}",
-  "topRow": 0,
+  "topRow": 4,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "td17fqwzda",
-  "widgetName": "Text2"
+  "widgetId": "602guxll5u",
+  "widgetName": "Text1"
 }
