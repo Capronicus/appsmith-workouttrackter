@@ -1,8 +1,10 @@
 INSERT INTO workout_templates (
-    name
+    name,
+    notes
 )
 SELECT
-    name || ' Copy'
+    name || ' Copy',
+    notes
 FROM workout_templates
 WHERE id = {{ tblWorkouts.selectedRow.id }}
 RETURNING id;

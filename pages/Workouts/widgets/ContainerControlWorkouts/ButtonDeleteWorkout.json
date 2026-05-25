@@ -31,7 +31,7 @@
   "mobileRightColumn": 38,
   "mobileTopRow": 12,
   "needsErrorInfo": false,
-  "onClick": "{{showModal(ModalDeleteWorkout.name).then(() => {\n  GetWorkouts.run();\n});}}",
+  "onClick": "{{showModal(ModalDeleteWorkout.name)}}",
   "parentColumnSpace": 29.4375,
   "parentId": "2n65psmxp0",
   "parentRowSpace": 10,
