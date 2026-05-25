@@ -50,7 +50,7 @@
   "labelStyle": "BOLD",
   "labelTextColor": "{{appsmith.theme.colors.backgroundColor}}",
   "labelTextSize": "0.875rem",
-  "labelWidth": "14",
+  "labelWidth": "15",
   "leftColumn": 4,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
