@@ -58,7 +58,7 @@
   "mobileRightColumn": 21,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onOptionChange": "const workoutId = SelectWorkout.selectedOptionValue;\n\nif (!workoutId) {\n  showAlert(\"No workout selected\", \"warning\");\n  return;\n}\n\nawait LogState.clearStore();\nawait storeValue(\"selectedWorkoutId\", workoutId);\n\nawait GetSessionExercises.run();\nawait GetPreviousFeels.run();\nawait PreviousWorkoutNote.run();\nawait LoadDraft.run();\nawait LogState.restoreDraft();",
+  "onOptionChange": "{{\n(async () => {\n  const workoutId = SelectWorkout.selectedOptionValue;\n\n  if (!workoutId) {\n    showAlert(\"No workout selected\", \"warning\");\n    return;\n  }\n\n  await LogState.clearStore();\n  await storeValue(\"selectedWorkoutId\", workoutId);\n\n  await GetSessionExercises.run();\n  await GetPreviousFeels.run();\n  await PreviousWorkoutNote.run();\n  await LoadDraft.run();\n  await LogState.restoreDraft();\n})();\n}}",
   "optionLabel": "name",
   "optionValue": "id",
   "originalBottomRow": 7,
