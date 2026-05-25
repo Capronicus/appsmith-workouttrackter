@@ -2,9 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 5,
+  "bottomRow": 7,
   "boxShadow": "none",
-  "defaultOptionValue": "{{appsmith.store.selectedWorkoutId || ''}}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  appsmith.store.selectedWorkoutId || '' ))(SelectWorkout.options, SelectWorkout.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -61,7 +61,7 @@
   "onOptionChange": "await LogState.clearStore();\nawait storeValue('selectedWorkoutId', SelectWorkout.value);\nawait GetSessionExercises.run();\nawait GetPreviousFeels.run();\nawait PreviousWorkoutNote.run();\nawait LoadDraft.run();\nawait LogState.restoreDraft();",
   "optionLabel": "name",
   "optionValue": "id",
-  "originalBottomRow": 5,
+  "originalBottomRow": 7,
   "originalTopRow": 1,
   "parentColumnSpace": 29.125,
   "parentId": "pru4nz16ki",

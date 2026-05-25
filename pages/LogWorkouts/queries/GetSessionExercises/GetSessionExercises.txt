@@ -20,5 +20,5 @@ SELECT
     ) AS previous_note
 FROM template_exercises te
 JOIN exercises e ON e.id = te.exercise_id
-WHERE te.template_id = {{SelectWorkout.value ?? 0}}
+WHERE te.template_id = {{ Number(SelectWorkout.value || 0) }}
 ORDER BY te.display_order;
