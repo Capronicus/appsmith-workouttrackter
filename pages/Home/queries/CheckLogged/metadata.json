@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT s.id AS session_id, s.session_date, s.completed_at,\n       wt.name AS workout_name,\n       e.name AS exercise_name,\n       ss.set_number, ss.reps, ss.weight, ss.feel, ss.exercise_notes\nFROM sessions s\nJOIN workout_templates wt ON wt.id = s.template_id\nLEFT JOIN session_sets ss ON ss.session_id = s.id\nLEFT JOIN exercises e ON e.id = ss.exercise_id\nORDER BY s.id DESC, ss.exercise_id, ss.set_number\nLIMIT 50;",
+      "body": "SELECT s.id AS session_id, s.session_date, s.completed_at,\n       wt.name AS workout_name,\n       e.name AS exercise_name,\n       ss.set_number, ss.reps, ss.weight, ss.feel, ss.exercise_notes\nFROM sessions s\nLEFT JOIN workout_templates wt ON wt.id = s.template_id\nLEFT JOIN session_sets ss ON ss.session_id = s.id\nLEFT JOIN exercises e ON e.id = ss.exercise_id\nORDER BY s.id DESC, ss.exercise_id, ss.set_number\nLIMIT 50;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

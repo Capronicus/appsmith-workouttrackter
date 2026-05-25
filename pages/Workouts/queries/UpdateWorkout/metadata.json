@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE workout_templates\nSET name = '{{InputWorkoutName.text}}',\n    notes = '{{InputNotes.text}}'\nWHERE id = {{tblWorkouts.selectedRow.id}};",
+      "body": "UPDATE workout_templates\nSET name = {{InputWorkoutName.text}},\n    notes = {{InputNotes.text}}\nWHERE id = {{tblWorkouts.selectedRow.id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
