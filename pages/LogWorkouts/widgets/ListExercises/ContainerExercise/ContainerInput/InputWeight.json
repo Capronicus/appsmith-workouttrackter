@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 5,
   "boxShadow": "none",
-  "defaultText": "{{Number(currentItem.default_weight)}}",
+  "defaultText": "{{appsmith.store['weight_'+currentItem.template_exercise_id] ?? Number(currentItem.default_weight)}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

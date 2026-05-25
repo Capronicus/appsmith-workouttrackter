@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 25,
   "boxShadow": "none",
-  "defaultText": "{{ currentItem.previous_note || '' }}",
+  "defaultText": "{{appsmith.store['notes_'+currentItem.template_exercise_id] ?? currentItem.previous_note ?? ''}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

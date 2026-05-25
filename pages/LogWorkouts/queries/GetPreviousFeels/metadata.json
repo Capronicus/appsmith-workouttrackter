@@ -30,6 +30,6 @@
     "name": "GetPreviousFeels",
     "pageId": "LogWorkouts",
     "runBehaviour": "AUTOMATIC",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

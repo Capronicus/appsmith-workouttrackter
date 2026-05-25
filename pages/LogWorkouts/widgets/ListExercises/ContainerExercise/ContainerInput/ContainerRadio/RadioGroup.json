@@ -4,13 +4,16 @@
   "animateLoading": true,
   "bottomRow": 5,
   "boxShadow": "none",
-  "defaultOptionValue": "same",
+  "defaultOptionValue": "{{appsmith.store['feel_'+currentItem.template_exercise_id] || 'same'}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "isDisabled"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",

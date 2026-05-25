@@ -1,0 +1,3 @@
+SELECT draft_data
+FROM workout_drafts
+WHERE template_id = {{SelectWorkout.value ?? 0}};

@@ -5,7 +5,7 @@
   "borderRadius": "0.375rem",
   "bottomRow": 5,
   "boxShadow": "none",
-  "defaultText": "{{Number(currentItem.reps)}}",
+  "defaultText": "{{appsmith.store['reps_'+currentItem.template_exercise_id+'_'+currentItem.set_number] ?? Number(currentItem.reps)}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "6a117fe9f82c2160e8de0a3e_e53b698f-d249-48fe-b925-5a098bbfd9f7",
-  "id": "LogWorkouts_PreviousWorkoutNote",
+  "gitSyncId": "6a117fe9f82c2160e8de0a3e_a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "id": "LogWorkouts_SaveDraft",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT workout_notes\nFROM sessions\nWHERE template_id = {{ SelectWorkout.value }}\n  AND workout_notes IS NOT NULL\n  AND workout_notes <> ''\nORDER BY completed_at DESC\nLIMIT 1;",
+      "body": "INSERT INTO workout_drafts (template_id, draft_data)\nVALUES ({{SelectWorkout.value}}, {{appsmith.store.draftData}}::jsonb)\nON CONFLICT (template_id) DO UPDATE SET\n  draft_data = EXCLUDED.draft_data,\n  updated_at = NOW();",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "name": "PreviousWorkoutNote",
+    "name": "SaveDraft",
     "pageId": "LogWorkouts",
-    "runBehaviour": "AUTOMATIC",
-    "userSetOnLoad": true
+    "runBehaviour": "MANUAL",
+    "userSetOnLoad": false
   }
 }

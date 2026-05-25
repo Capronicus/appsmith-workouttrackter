@@ -1,0 +1,2 @@
+DELETE FROM workout_drafts
+WHERE template_id = {{SelectWorkout.value}};

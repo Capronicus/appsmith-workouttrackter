@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 5,
   "boxShadow": "none",
-  "defaultOptionValue": "",
+  "defaultOptionValue": "{{appsmith.store.selectedWorkoutId || ''}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -17,6 +17,9 @@
     },
     {
       "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -55,7 +58,7 @@
   "mobileRightColumn": 21,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onOptionChange": "await LogState.clearStore();\nLogState.reset();\nawait GetSessionExercises.run();\nawait GetPreviousFeels.run();\nawait PreviousWorkoutNote.run();",
+  "onOptionChange": "await LogState.clearStore();\nawait storeValue('selectedWorkoutId', SelectWorkout.value);\nawait GetSessionExercises.run();\nawait GetPreviousFeels.run();\nawait PreviousWorkoutNote.run();\nawait LoadDraft.run();\nawait LogState.restoreDraft();",
   "optionLabel": "name",
   "optionValue": "id",
   "originalBottomRow": 5,

@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "6a117fe9f82c2160e8de0a3e_e53b698f-d249-48fe-b925-5a098bbfd9f7",
-  "id": "LogWorkouts_PreviousWorkoutNote",
+  "gitSyncId": "6a117fe9f82c2160e8de0a3e_c3d4e5f6-a1b2-9012-cdef-123456789012",
+  "id": "LogWorkouts_DeleteDraft",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT workout_notes\nFROM sessions\nWHERE template_id = {{ SelectWorkout.value }}\n  AND workout_notes IS NOT NULL\n  AND workout_notes <> ''\nORDER BY completed_at DESC\nLIMIT 1;",
+      "body": "DELETE FROM workout_drafts\nWHERE template_id = {{SelectWorkout.value}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "name": "PreviousWorkoutNote",
+    "name": "DeleteDraft",
     "pageId": "LogWorkouts",
-    "runBehaviour": "AUTOMATIC",
-    "userSetOnLoad": true
+    "runBehaviour": "MANUAL",
+    "userSetOnLoad": false
   }
 }

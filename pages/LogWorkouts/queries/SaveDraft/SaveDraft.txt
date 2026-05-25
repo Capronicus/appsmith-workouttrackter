@@ -1,0 +1,5 @@
+INSERT INTO workout_drafts (template_id, draft_data)
+VALUES ({{SelectWorkout.value}}, {{appsmith.store.draftData}}::jsonb)
+ON CONFLICT (template_id) DO UPDATE SET
+  draft_data = EXCLUDED.draft_data,
+  updated_at = NOW();
