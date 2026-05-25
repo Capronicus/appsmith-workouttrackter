@@ -26,7 +26,8 @@ export default {
       key.startsWith('weight_') ||
       key.startsWith('feel_') ||
       key.startsWith('notes_') ||
-      key.startsWith('inserting')
+      key.startsWith('inserting') ||
+      key.startsWith('updating')
     ) {
       keysToCleanup.push(key);
     }
@@ -40,6 +41,7 @@ export default {
 }, 
  async complete() {
   if (this.doneIds.length === 0) {
+    showAlert('Mark at least one exercise as done.', 'warning');
     return;
   }
 
