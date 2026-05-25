@@ -1,0 +1,1 @@
+UPDATE public.exercises SET "name"= '{{tblExercises.updatedRow.name}}', "muscle_group"= '{{tblExercises.updatedRow.muscle_group}}', "notes"= '{{tblExercises.updatedRow.notes}}', "created_at"= '{{tblExercises.updatedRow.created_at}}', "image_url"= '{{tblExercises.updatedRow.image_url}}' WHERE "id"= {{tblExercises.updatedRow.id}};

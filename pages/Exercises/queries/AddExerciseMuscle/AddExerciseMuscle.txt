@@ -1,0 +1,17 @@
+INSERT INTO exercise_muscles (
+    exercise_id,
+    muscle_id,
+    role,
+    intensity
+)
+SELECT
+    {{ tblExercises.selectedRow.id }},
+    {{ SelectMuscle.selectedOptionValue }},
+    'Secondary',
+    3
+WHERE NOT EXISTS (
+    SELECT 1
+    FROM exercise_muscles
+    WHERE exercise_id = {{ tblExercises.selectedRow.id }}
+      AND muscle_id = {{ SelectMuscle.selectedOptionValue }}
+);

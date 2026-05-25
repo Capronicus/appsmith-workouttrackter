@@ -1,0 +1,12 @@
+INSERT INTO exercises
+(
+    name,
+    notes,
+    image_url
+)
+VALUES
+(
+    {{ InputExercisesName.text }},
+    {{ InputWorkoutNotes.text }},
+    {{ InputExercisesImageURL.text }}
+);

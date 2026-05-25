@@ -1,0 +1,7 @@
+SELECT workout_notes
+FROM sessions
+WHERE template_id = {{ SelectWorkout.value }}
+  AND workout_notes IS NOT NULL
+  AND workout_notes <> ''
+ORDER BY completed_at DESC
+LIMIT 1;

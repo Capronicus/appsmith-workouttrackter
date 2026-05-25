@@ -1,0 +1,2 @@
+DELETE FROM exercises
+WHERE id = {{tblExercises.selectedRow.id}};

@@ -1,0 +1,10 @@
+SELECT
+  *
+FROM
+  public.exercises
+ORDER BY
+  "{{tblExercises.sortOrder.column || 'id'}}" {{tblExercises.sortOrder.order !== "desc" ? "" : "DESC"}}
+LIMIT
+  {{tblExercises.pageSize}}
+OFFSET
+  {{tblExercises.pageOffset}}

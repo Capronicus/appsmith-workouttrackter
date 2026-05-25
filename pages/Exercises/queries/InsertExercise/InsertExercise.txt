@@ -1,0 +1,12 @@
+INSERT INTO exercise_muscles (
+    exercise_id,
+    muscle_id,
+    intensity,
+    role
+)
+VALUES (
+    {{ tblExercises.selectedRow.id }},
+    {{ SelectMuscle.selectedOptionValue }},
+    50,
+    'Secondary'
+);

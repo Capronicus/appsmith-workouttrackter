@@ -1,0 +1,2 @@
+DELETE FROM session_sets WHERE session_id = {{Input1.text}};
+DELETE FROM sessions WHERE id = {{Input1.text}};

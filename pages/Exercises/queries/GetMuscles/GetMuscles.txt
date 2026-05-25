@@ -1,0 +1,5 @@
+SELECT
+    id,
+    name
+FROM muscles
+ORDER BY name;

@@ -1,0 +1,9 @@
+INSERT INTO template_exercises (template_id, exercise_id, default_sets, default_reps, default_weight, display_order)
+VALUES (
+    {{tblWorkouts.selectedRow.id}},
+    {{SelectExercise.value}},
+    {{InputSets.text}},
+    {{InputReps.text}},
+    {{InputWeight.text}},
+    COALESCE((SELECT MAX(display_order) + 1 FROM template_exercises WHERE template_id = {{tblWorkouts.selectedRow.id}}), 0)
+);

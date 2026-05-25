@@ -1,0 +1,3 @@
+ALTER TABLE sessions DROP CONSTRAINT sessions_template_id_fkey;
+ALTER TABLE sessions ADD CONSTRAINT sessions_template_id_fkey 
+  FOREIGN KEY (template_id) REFERENCES workout_templates(id) ON DELETE SET NULL;

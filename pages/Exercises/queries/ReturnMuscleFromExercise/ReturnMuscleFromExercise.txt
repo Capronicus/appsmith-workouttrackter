@@ -1,0 +1,10 @@
+SELECT
+    em.exercise_id,
+    em.muscle_id,
+    m.name,
+    em.role,
+    em.intensity
+FROM exercise_muscles em
+JOIN muscles m ON m.id = em.muscle_id
+WHERE em.exercise_id = {{ tblExercises.selectedRow.id || 0 }}
+ORDER BY em.intensity DESC;

@@ -1,0 +1,1 @@
+INSERT INTO public.exercises ("name","muscle_group","notes","created_at","image_url") VALUES ('{{(tblExercises.newRow || {}).name}}','{{(tblExercises.newRow || {}).muscle_group}}','{{(tblExercises.newRow || {}).notes}}','{{(tblExercises.newRow || {}).created_at}}','{{(tblExercises.newRow || {}).image_url}}')

@@ -1,0 +1,5 @@
+DELETE FROM session_sets;
+DELETE FROM sessions;
+DELETE FROM template_exercises;
+DELETE FROM workout_templates;
+DELETE FROM exercises;

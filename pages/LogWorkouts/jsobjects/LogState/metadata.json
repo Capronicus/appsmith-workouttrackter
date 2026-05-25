@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "6a117fe9f82c2160e8de0a3e_294b0059-7255-432e-b41c-8ee50e3ceb5c",
+  "id": "LogWorkouts_LogState",
+  "unpublishedCollection": {
+    "name": "LogState",
+    "pageId": "LogWorkouts",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "doneIds",
+        "value": "[]"
+      }
+    ]
+  }
+}

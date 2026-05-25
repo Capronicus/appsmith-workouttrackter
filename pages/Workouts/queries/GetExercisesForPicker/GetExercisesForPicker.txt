@@ -1,0 +1,5 @@
+SELECT te.id, e.name, te.default_sets, te.default_reps, te.default_weight, te.display_order
+FROM template_exercises te
+JOIN exercises e ON e.id = te.exercise_id
+WHERE te.template_id = {{tblWorkouts.selectedRow ? tblWorkouts.selectedRow.id : 0}}
+ORDER BY te.display_order;

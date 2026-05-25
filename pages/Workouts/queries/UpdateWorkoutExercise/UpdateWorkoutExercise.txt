@@ -1,0 +1,6 @@
+UPDATE template_exercises
+SET default_sets = {{InputSets.text}},
+    default_reps = {{InputReps.text}},
+    default_weight = {{InputWeight.text}},
+    display_order = {{InputDisplayOrder.text}}
+WHERE id = {{tblWorkoutExercises.selectedRow.id}};

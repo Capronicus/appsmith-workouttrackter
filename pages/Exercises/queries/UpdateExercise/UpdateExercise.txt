@@ -1,0 +1,6 @@
+UPDATE exercises
+SET
+    name = {{ InputExercisesName.text }},
+    notes = {{ InputWorkoutNotes.text }},
+    image_url = {{ InputExercisesImageURL.text }}
+WHERE id = {{ tblExercises.selectedRow.id }};

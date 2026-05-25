@@ -1,0 +1,10 @@
+UPDATE exercise_muscles
+SET
+    role = {{ tblMusclesExercise.updatedRow.role }},
+    intensity = CASE {{ "'" + tblMusclesExercise.updatedRow.role + "'" }}
+        WHEN 'Primary' THEN 5
+        WHEN 'Secondary' THEN 3
+        WHEN 'Stabilizer' THEN 1
+    END
+WHERE exercise_id = {{ tblMusclesExercise.updatedRow.exercise_id }}
+  AND muscle_id = {{ tblMusclesExercise.updatedRow.muscle_id }};
