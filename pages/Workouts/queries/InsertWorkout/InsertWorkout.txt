@@ -1,2 +1,2 @@
 INSERT INTO workout_templates (name, notes)
-VALUES ('{{InputWorkoutName.text}}', '{{InputNotes.text}}');
+VALUES ({{InputWorkoutName.text}}, {{InputNotes.text}});

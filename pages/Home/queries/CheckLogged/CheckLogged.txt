@@ -3,7 +3,7 @@ SELECT s.id AS session_id, s.session_date, s.completed_at,
        e.name AS exercise_name,
        ss.set_number, ss.reps, ss.weight, ss.feel, ss.exercise_notes
 FROM sessions s
-JOIN workout_templates wt ON wt.id = s.template_id
+LEFT JOIN workout_templates wt ON wt.id = s.template_id
 LEFT JOIN session_sets ss ON ss.session_id = s.id
 LEFT JOIN exercises e ON e.id = ss.exercise_id
 ORDER BY s.id DESC, ss.exercise_id, ss.set_number

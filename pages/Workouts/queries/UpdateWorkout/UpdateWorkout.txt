@@ -1,4 +1,4 @@
 UPDATE workout_templates
-SET name = '{{InputWorkoutName.text}}',
-    notes = '{{InputNotes.text}}'
+SET name = {{InputWorkoutName.text}},
+    notes = {{InputNotes.text}}
 WHERE id = {{tblWorkouts.selectedRow.id}};
