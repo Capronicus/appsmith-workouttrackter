@@ -1,5 +1,8 @@
 {
   "appIsExample": false,
+  "appLayout": {
+    "type": "MOBILE"
+  },
   "applicationDetail": {
     "appPositioning": {
       "type": "FIXED"
@@ -41,8 +44,15 @@
     {
       "id": "LogWorkouts",
       "isDefault": false
+    },
+    {
+      "id": "LogWorkoutsMobile",
+      "isDefault": false
     }
   ],
+  "unpublishedAppLayout": {
+    "type": "MOBILE"
+  },
   "unpublishedApplicationDetail": {
     "appPositioning": {
       "type": "FIXED"

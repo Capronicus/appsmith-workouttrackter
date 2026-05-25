@@ -1,0 +1,74 @@
+{
+  "accentColor": "#71717a",
+  "alignment": "right",
+  "animateLoading": true,
+  "bottomRow": 4,
+  "boxShadow": "none",
+  "defaultOptionValue": "same",
+  "dynamicBindingPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "onSelectionChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onSelectionChange"
+    }
+  ],
+  "flexVerticalAlignment": "start",
+  "isDisabled": "{{LogState.isDone(currentItem.template_exercise_id)}}",
+  "isInline": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "mp1nxf87od",
+  "label": "",
+  "labelAlignment": "left",
+  "labelPosition": "Auto",
+  "labelStyle": "",
+  "labelTextColor": "white",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 7,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 22,
+  "mobileTopRow": 1,
+  "needsErrorInfo": false,
+  "onSelectionChange": "{{storeValue(`feel_${currentItem.template_exercise_id}`, RadioGroup.value)}}",
+  "options": [
+    {
+      "label": "▼",
+      "value": "lower"
+    },
+    {
+      "label": "✦",
+      "value": "same"
+    },
+    {
+      "label": "▲",
+      "value": "higher"
+    }
+  ],
+  "parentColumnSpace": 5.310577392578125,
+  "parentId": "6zapv0actg",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 63,
+  "topRow": 0,
+  "type": "RADIO_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "lwlm9f7ytt",
+  "widgetName": "RadioGroup"
+}

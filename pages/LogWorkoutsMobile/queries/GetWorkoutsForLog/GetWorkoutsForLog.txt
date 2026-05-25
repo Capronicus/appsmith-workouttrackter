@@ -1,0 +1,1 @@
+SELECT id, name FROM workout_templates ORDER BY name;

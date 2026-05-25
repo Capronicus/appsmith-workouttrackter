@@ -1,0 +1,61 @@
+{
+  "animateLoading": true,
+  "borderRadius": "1.5rem",
+  "bottomRow": 82,
+  "boxShadow": "none",
+  "buttonColor": "{{LogState.isDone(currentItem.template_exercise_id) ? 'darkred' : 'orange'}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "text"
+    },
+    {
+      "key": "buttonColor"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    },
+    {
+      "key": "buttonColor"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconAlign": "right",
+  "iconName": "tick-circle",
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "55zpcga4s9",
+  "leftColumn": 19,
+  "minWidth": 120,
+  "mobileBottomRow": 6,
+  "mobileLeftColumn": 47,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 2,
+  "needsErrorInfo": false,
+  "onClick": "{{LogState.toggle(currentItem.template_exercise_id)}}",
+  "parentColumnSpace": 29.3125,
+  "parentId": "rjfhu0the7",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 45,
+  "text": "{{LogState.isDone(currentItem.template_exercise_id) ? 'Undo' : 'Done'}}",
+  "topRow": 75,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "xqhqmrjqq5",
+  "widgetName": "ButtonDoneUndone"
+}
