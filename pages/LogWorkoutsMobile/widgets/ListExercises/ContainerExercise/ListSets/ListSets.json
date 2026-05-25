@@ -9,7 +9,7 @@
   "animateLoading": true,
   "backgroundColor": "transparent",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 46,
+  "bottomRow": 36,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
@@ -97,7 +97,7 @@
   "itemBackgroundColor": "#FFFFFF",
   "itemSpacing": 8,
   "key": "e0psd52jtz",
-  "leftColumn": 1,
+  "leftColumn": 0,
   "listData": "{{Array.from({length: currentItem.default_sets}, (_, i) => ({set_number: i + 1, reps: currentItem.default_reps, weight: currentItem.default_weight, template_exercise_id: currentItem.template_exercise_id, exercise_id: currentItem.exercise_id}))}}",
   "mainCanvasId": "g6le7cj3jr",
   "mainContainerId": "rg8i9qlwy8",
@@ -118,7 +118,7 @@
   "rightColumn": 63,
   "selectedItemView": "{{{}}}",
   "templateHeight": 160,
-  "topRow": 27,
+  "topRow": 17,
   "triggeredItemView": "{{{}}}",
   "type": "LIST_WIDGET_V2",
   "widgetId": "b9a382dcte",
