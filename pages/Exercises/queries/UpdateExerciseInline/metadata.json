@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "6a117fe9f82c2160e8de0a3e_1c6d08e8-1068-4e25-befd-25471b5bdd8b",
-  "id": "Exercises_Total_record_public_exercises1",
+  "gitSyncId": "6a117fe9f82c2160e8de0a3e_258c305e-cde1-4f35-9150-48a687276e1c",
+  "id": "Exercises_UpdateExerciseInline",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT COUNT(*) from public.exercises;",
+      "body": "UPDATE public.exercises SET \"name\"= '{{tblExercises.updatedRow.name}}', \"muscle_group\"= '{{tblExercises.updatedRow.muscle_group}}', \"notes\"= '{{tblExercises.updatedRow.notes}}', \"created_at\"= '{{tblExercises.updatedRow.created_at}}', \"image_url\"= '{{tblExercises.updatedRow.image_url}}' WHERE \"id\"= {{tblExercises.updatedRow.id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "name": "Total_record_public_exercises1",
+    "name": "UpdateExerciseInline",
     "pageId": "Exercises",
-    "runBehaviour": "AUTOMATIC",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

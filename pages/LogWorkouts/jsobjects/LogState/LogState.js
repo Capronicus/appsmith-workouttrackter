@@ -81,6 +81,7 @@ export default {
     }
 
     await this.clearStore();
+    showAlert('Workout logged!', 'success');
     this.reset();
   } catch (e) {
     showAlert('Failed to log workout: ' + e.message, 'error');

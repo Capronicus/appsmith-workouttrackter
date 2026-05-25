@@ -1,16 +1,16 @@
 {
-  "gitSyncId": "6a117fe9f82c2160e8de0a3e_bef66802-6c92-4321-bfc5-d02d0ced02f9",
-  "id": "Workouts_GetExercisesForPicker",
+  "gitSyncId": "6a117fe9f82c2160e8de0a3e_8dc26eef-ec9d-4ced-b6f4-ca6939f2b8f2",
+  "id": "Exercises_InsertExerciseInline",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT te.id, e.name, te.default_sets, te.default_reps, te.default_weight, te.display_order\nFROM template_exercises te\nJOIN exercises e ON e.id = te.exercise_id\nWHERE te.template_id = {{tblWorkouts.selectedRow ? tblWorkouts.selectedRow.id : 0}}\nORDER BY te.display_order;",
+      "body": "INSERT INTO public.exercises (\"name\",\"muscle_group\",\"notes\",\"created_at\",\"image_url\") VALUES ('{{(tblExercises.newRow || {}).name}}','{{(tblExercises.newRow || {}).muscle_group}}','{{(tblExercises.newRow || {}).notes}}','{{(tblExercises.newRow || {}).created_at}}','{{(tblExercises.newRow || {}).image_url}}')",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ],
       "timeoutInMillisecond": 10000
@@ -27,8 +27,8 @@
         "key": "body"
       }
     ],
-    "name": "GetExercisesForPicker",
-    "pageId": "Workouts",
+    "name": "InsertExerciseInline",
+    "pageId": "Exercises",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }

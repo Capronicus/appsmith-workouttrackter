@@ -30,7 +30,7 @@
   "mobileRightColumn": 17,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onClick": "{{DeleteSession.run().then(() => {\n  CheckLogged.run();\n  resetWidget(\"Input1\", true);\n  JSObject1.ButtonDeleteSessiononClick();\n});}}",
+  "onClick": "{{DeleteSession.run().then(() => {\n  CheckLogged.run();\n  resetWidget(\"Input1\", true);\n});}}",
   "parentColumnSpace": 17.479248046875,
   "parentId": "nxjw717uoa",
   "parentRowSpace": 10,

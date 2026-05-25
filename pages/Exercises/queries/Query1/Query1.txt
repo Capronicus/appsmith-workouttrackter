@@ -1,7 +1,0 @@
-UPDATE exercise_muscles
-SET intensity =
-CASE role
-    WHEN 'Primary' THEN 5
-    WHEN 'Secondary' THEN 3
-    WHEN 'Stabilizer' THEN 1
-END;

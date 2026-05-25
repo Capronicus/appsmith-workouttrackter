@@ -1,1 +1,0 @@
-SELECT id, name, notes FROM workout_templates ORDER BY name;

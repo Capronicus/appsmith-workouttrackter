@@ -1,16 +1,16 @@
 {
-  "gitSyncId": "6a117fe9f82c2160e8de0a3e_efedac67-0cb5-4a95-a67f-79c738a8179b",
-  "id": "Exercises_Query1",
+  "gitSyncId": "6a117fe9f82c2160e8de0a3e_367fcebc-1011-407b-b9d4-1dc7b8068a15",
+  "id": "Exercises_GetExercisesSorted",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE exercise_muscles\nSET intensity =\nCASE role\n    WHEN 'Primary' THEN 5\n    WHEN 'Secondary' THEN 3\n    WHEN 'Stabilizer' THEN 1\nEND;",
+      "body": "SELECT\n  *\nFROM\n  public.exercises\nORDER BY\n  \"{{tblExercises.sortOrder.column || 'id'}}\" {{tblExercises.sortOrder.order !== \"desc\" ? \"\" : \"DESC\"}}\nLIMIT\n  {{tblExercises.pageSize}}\nOFFSET\n  {{tblExercises.pageOffset}}",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ],
       "timeoutInMillisecond": 10000
@@ -22,8 +22,12 @@
       "name": "fitnessDB",
       "pluginId": "postgres-plugin"
     },
-    "dynamicBindingPathList": [],
-    "name": "Query1",
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
+    "name": "GetExercisesSorted",
     "pageId": "Exercises",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false

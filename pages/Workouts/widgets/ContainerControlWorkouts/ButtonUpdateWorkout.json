@@ -31,7 +31,7 @@
   "mobileRightColumn": 38,
   "mobileTopRow": 12,
   "needsErrorInfo": false,
-  "onClick": "{{InsertWorkout.run().then(() => {\n  GetWorkouts.run();\n});}}",
+  "onClick": "{{UpdateWorkout.run().then(() => {\n  GetWorkouts.run();\n});}}",
   "parentColumnSpace": 29.4375,
   "parentId": "2n65psmxp0",
   "parentRowSpace": 10,

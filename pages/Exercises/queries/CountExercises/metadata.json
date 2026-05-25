@@ -1,16 +1,16 @@
 {
-  "gitSyncId": "6a117fe9f82c2160e8de0a3e_7d7a7030-3bd6-4a9f-abc5-cc2cc3f4df8f",
-  "id": "LogWorkouts_GetWorkouts",
+  "gitSyncId": "6a117fe9f82c2160e8de0a3e_1c6d08e8-1068-4e25-befd-25471b5bdd8b",
+  "id": "Exercises_CountExercises",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT id, name, notes FROM workout_templates ORDER BY name;",
+      "body": "SELECT COUNT(*) from public.exercises;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ],
       "timeoutInMillisecond": 10000
@@ -22,10 +22,14 @@
       "name": "fitnessDB",
       "pluginId": "postgres-plugin"
     },
-    "dynamicBindingPathList": [],
-    "name": "GetWorkouts",
-    "pageId": "LogWorkouts",
-    "runBehaviour": "MANUAL",
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
+    "name": "CountExercises",
+    "pageId": "Exercises",
+    "runBehaviour": "AUTOMATIC",
     "userSetOnLoad": false
   }
 }
