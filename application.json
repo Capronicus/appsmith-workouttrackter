@@ -44,10 +44,6 @@
     {
       "id": "LogWorkouts",
       "isDefault": false
-    },
-    {
-      "id": "LogWorkoutsMobile",
-      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

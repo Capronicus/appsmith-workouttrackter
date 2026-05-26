@@ -1,6 +1,0 @@
-SELECT DISTINCT ON (ss.exercise_id) ss.exercise_id, ss.feel
-FROM session_sets ss
-JOIN sessions s ON s.id = ss.session_id
-WHERE s.template_id = {{SelectWorkout.value ?? 0}}
-  AND s.completed_at IS NOT NULL
-ORDER BY ss.exercise_id, s.completed_at DESC;
