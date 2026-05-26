@@ -1,7 +1,7 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
-  "borderColor": "#E0DEDE",
+  "borderColor": "#3f3f46",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
   "bottomRow": 118,
@@ -538,6 +538,7 @@
   "topRow": 30,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
+  "variant": "VARIANT3",
   "version": 2,
   "verticalAlignment": "CENTER",
   "widgetId": "jmu3qwx6is",
