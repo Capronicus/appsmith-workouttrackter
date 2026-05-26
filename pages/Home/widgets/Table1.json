@@ -46,12 +46,14 @@
   ],
   "columnUpdatedAt": 1779556793228,
   "columnWidthMap": {
-    "completed_at": 197,
-    "feel": 98,
-    "reps": 71,
-    "session_date": 156,
-    "set_number": 76,
-    "weight": 90
+    "completed_at": 182,
+    "feel": 68,
+    "reps": 73,
+    "session_date": 146,
+    "session_id": 112,
+    "set_number": 60,
+    "weight": 89,
+    "workout_name": 125
   },
   "compactMode": "SHORT",
   "customIsLoading": false,

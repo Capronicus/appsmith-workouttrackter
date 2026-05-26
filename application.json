@@ -14,7 +14,7 @@
       "navStyle": "inline",
       "orientation": "top",
       "position": "static",
-      "showNavbar": true,
+      "showNavbar": false,
       "showSignIn": false
     },
     "themeSetting": {
@@ -64,7 +64,7 @@
       "navStyle": "inline",
       "orientation": "top",
       "position": "static",
-      "showNavbar": true,
+      "showNavbar": false,
       "showSignIn": false
     },
     "themeSetting": {

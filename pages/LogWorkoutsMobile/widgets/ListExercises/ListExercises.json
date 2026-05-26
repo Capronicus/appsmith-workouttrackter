@@ -9,8 +9,8 @@
   "animateLoading": true,
   "backgroundColor": "#71717a",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 81,
-  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "bottomRow": 85,
+  "boxShadow": "none",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -79,9 +79,6 @@
       "key": "borderRadius"
     },
     {
-      "key": "boxShadow"
-    },
-    {
       "key": "listData"
     }
   ],
@@ -94,7 +91,7 @@
   "isLoading": false,
   "isVisible": true,
   "itemBackgroundColor": "#FFFFFF",
-  "itemSpacing": 8,
+  "itemSpacing": "2",
   "key": "e0psd52jtz",
   "leftColumn": 0,
   "listData": "{{GetSessionExercises.data}}",
@@ -106,8 +103,8 @@
   "mobileRightColumn": 24,
   "mobileTopRow": 23,
   "needsErrorInfo": false,
-  "originalBottomRow": 119,
-  "originalTopRow": 45,
+  "originalBottomRow": 81,
+  "originalTopRow": 14,
   "pageSize": 1,
   "parentColumnSpace": 29.75,
   "parentId": "0",
@@ -119,7 +116,7 @@
   "rightColumn": 64,
   "selectedItemView": "{{{}}}",
   "templateHeight": 160,
-  "topRow": 14,
+  "topRow": 18,
   "triggeredItemView": "{{{}}}",
   "type": "LIST_WIDGET_V2",
   "widgetId": "kk7zbmabei",
