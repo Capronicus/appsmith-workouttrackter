@@ -31,7 +31,6 @@
       "key": "onTextChanged"
     }
   ],
-  "onTextChanged": "{{storeValue('workoutNotes', InputWorkoutNotes.text)}}",
   "iconAlign": "left",
   "inputType": "MULTI_LINE_TEXT",
   "isDisabled": false,
@@ -39,7 +38,7 @@
   "isRequired": false,
   "isVisible": true,
   "key": "tajt2v4nwh",
-  "label": "Workout Notes",
+  "label": "",
   "labelAlignment": "left",
   "labelPosition": "Left",
   "labelStyle": "BOLD",
@@ -55,6 +54,7 @@
   "mobileRightColumn": 44,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
+  "onTextChanged": "{{storeValue('workoutNotes', InputWorkoutNotes.text)}}",
   "originalBottomRow": 9,
   "originalTopRow": 1,
   "parentColumnSpace": 20.984375,
@@ -63,7 +63,7 @@
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 37,
+  "rightColumn": 35,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
   "topRow": 1,

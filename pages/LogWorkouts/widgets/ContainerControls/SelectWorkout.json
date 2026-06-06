@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 7,
+  "bottomRow": 5,
   "boxShadow": "none",
   "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  appsmith.store.selectedWorkoutId || '' ))(SelectWorkout.options, SelectWorkout.serverSideFiltering) }}",
   "dynamicBindingPathList": [
@@ -61,7 +61,7 @@
   "onOptionChange": "{{\n(async () => {\n  const workoutId = SelectWorkout.selectedOptionValue;\n\n  if (!workoutId) {\n    showAlert(\"No workout selected\", \"warning\");\n    return;\n  }\n\n  await LogState.clearStore();\n  await storeValue(\"selectedWorkoutId\", workoutId);\n\n  await GetSessionExercises.run();\n  await GetPreviousFeels.run();\n  await PreviousWorkoutNote.run();\n  await LoadDraft.run();\n  await LogState.restoreDraft();\n})();\n}}",
   "optionLabel": "name",
   "optionValue": "id",
-  "originalBottomRow": 7,
+  "originalBottomRow": 5,
   "originalTopRow": 1,
   "parentColumnSpace": 29.125,
   "parentId": "pru4nz16ki",

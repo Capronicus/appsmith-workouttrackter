@@ -1,0 +1,6 @@
+INSERT INTO exercise_muscles
+(exercise_id, muscle_id, intensity, role)
+VALUES
+(37, 19, 5, 'Primary'), -- Upper Back
+(37, 5, 5, 'Primary'),  -- Rear Delts
+(37, 10, 3, 'Secondary'); -- Traps

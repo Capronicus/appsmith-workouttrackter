@@ -44,6 +44,14 @@
     {
       "id": "LogWorkouts",
       "isDefault": false
+    },
+    {
+      "id": "MuscleVisualizer",
+      "isDefault": false
+    },
+    {
+      "id": "WorkoutVisualizer",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

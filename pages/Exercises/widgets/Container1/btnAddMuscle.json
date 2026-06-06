@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 7,
+  "bottomRow": 6,
   "boxShadow": "none",
   "buttonColor": "#71717a",
   "buttonVariant": "PRIMARY",
@@ -41,7 +41,7 @@
   "responsiveBehavior": "hug",
   "rightColumn": 29,
   "text": "Add 🢁",
-  "topRow": 1,
+  "topRow": 0,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "fdar00lglm",

@@ -1,0 +1,6 @@
+SELECT
+    name,
+    body_region,
+    description
+FROM muscles
+ORDER BY name;

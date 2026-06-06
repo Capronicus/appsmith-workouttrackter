@@ -1,0 +1,23 @@
+UPDATE muscles
+SET description =
+CASE name
+    WHEN 'Abs' THEN 'Main abdominal muscles used for trunk flexion and core stability'
+    WHEN 'Biceps' THEN 'Front upper arm muscles used during pulling and curling movements'
+    WHEN 'Calves' THEN 'Lower leg muscles used during walking, running and calf raises'
+    WHEN 'Chest' THEN 'Primary pushing muscles of the chest'
+    WHEN 'Forearms' THEN 'Lower arm muscles responsible for grip strength and wrist movement'
+    WHEN 'Front Delts' THEN 'Front shoulder muscles used during pressing movements'
+    WHEN 'Glutes' THEN 'Hip muscles responsible for extension and power generation'
+    WHEN 'Hamstrings' THEN 'Back of the thigh muscles used during hip extension and knee flexion'
+    WHEN 'Lats' THEN 'Large back muscles used during pulling movements'
+    WHEN 'Lower Back' THEN 'Spinal erector muscles responsible for posture and back extension'
+    WHEN 'Neck' THEN 'Muscles supporting head movement and neck stability'
+    WHEN 'Obliques' THEN 'Side abdominal muscles used during rotation and stabilization'
+    WHEN 'Quads' THEN 'Front thigh muscles used during squats, lunges and leg extension'
+    WHEN 'Rear Delts' THEN 'Rear shoulder muscles used during rowing and pulling movements'
+    WHEN 'Side Delts' THEN 'Side shoulder muscles responsible for arm abduction'
+    WHEN 'Traps' THEN 'Upper back and neck muscles used during shrugging and posture'
+    WHEN 'Triceps' THEN 'Back upper arm muscles used during pressing movements'
+    WHEN 'Upper Chest' THEN 'Upper portion of the chest emphasized during incline pressing'
+    WHEN 'Upper Back' THEN 'Rhomboids and mid-back muscles used during rowing movements'
+END;

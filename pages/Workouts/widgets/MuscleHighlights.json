@@ -1,0 +1,61 @@
+{
+  "backgroundColor": "#71717a",
+  "borderColor": "#18181b",
+  "borderRadius": "0.375rem",
+  "borderWidth": "3",
+  "bottomRow": 126,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultModel": "{{\n{\n  overlays:\n    tblWorkoutExercises.selectedRow?.id\n      ? MuscleOverlayHelper.getOverlaysForWorkoutExercise()\n      : MuscleOverlayHelper.getOverlaysForWorkout()\n}\n}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "defaultModel"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [],
+  "events": [],
+  "isCanvas": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "uqy85ge5a7",
+  "leftColumn": 0,
+  "maxDynamicHeight": 74,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 77,
+  "mobileLeftColumn": 4,
+  "mobileRightColumn": 27,
+  "mobileTopRow": 47,
+  "needsErrorInfo": false,
+  "originalBottomRow": 171,
+  "originalTopRow": 104,
+  "parentColumnSpace": 19.8125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "shouldScrollContents": true,
+  "srcDoc": {
+    "css": "#container {\n  position: relative;\n  width: 100%;\n}\n\n#base {\n  width: 100%;\n  display: block;\n}\n\n#overlay {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  pointer-events: none;\n}\n\n#base,\n#overlay {\n  width: 60%;\n  margin-left: 20%;\n}",
+    "html": "<div id=\"container\">\n  <img\n    id=\"base\"\n    src=\"https://duffs.homene.st/fitness/fullbody/full%20body.png\"\n  />\n\n  <div id=\"overlays\"></div>\n</div>",
+    "js": "function renderOverlays() {\n  const container = document.getElementById(\"overlays\");\n  container.innerHTML = \"\";\n  const overlays = appsmith.model.overlays || [];\n  const maxIntensity = Math.max(...overlays.map(x => x.intensity || 1), 1);\n  overlays.forEach(item => {\n    const img = document.createElement(\"img\");\n    img.src = item.url;\n    img.style.position = \"absolute\";\n    img.style.top = \"0\";\n    img.style.left = \"0\";\n    img.style.width = \"60%\";\n    img.style.marginLeft = \"20%\";\n    img.style.pointerEvents = \"none\";\n    img.style.opacity = Math.max(0.25, item.intensity / maxIntensity);\n    container.appendChild(img);\n  });\n}\nappsmith.onReady(() => {\n  renderOverlays();\n});\nappsmith.onModelChange(() => {\n  renderOverlays();\n});"
+  },
+  "theme": "{{appsmith.theme}}",
+  "topRow": 59,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": "#container{\n  position:relative;\n  width:100%;\n}\n\n#base{\n  width:100%;\n  display:block;\n}\n\n#overlay{\n  position:absolute;\n  top:0;\n  left:0;\n  width:100%;\n  pointer-events:none;\n}\n\n#base,\n#overlay{\n  width:60%;\n  margin-left:20%;\n}",
+    "html": "<div id=\"container\">\n  <img\n    id=\"base\"\n    src=\"https://duffs.homene.st/fitness/fullbody/full%20body.png\"\n  />\n\n  <div id=\"overlays\"></div>\n</div>",
+    "js": "function renderOverlays() {\n\n  const container =\n    document.getElementById(\"overlays\");\n\n  container.innerHTML = \"\";\n\n  const overlays =\n    appsmith.model.overlays || [];\n\n  const maxIntensity = Math.max(\n    ...overlays.map(x => x.intensity || 1),\n    1\n  );\n\n  overlays.forEach(item => {\n\n    const img =\n      document.createElement(\"img\");\n\n    img.src = item.url;\n\n    img.style.position = \"absolute\";\n    img.style.top = \"0\";\n    img.style.left = \"0\";\n\n    img.style.width = \"60%\";\n    img.style.marginLeft = \"20%\";\n\n    img.style.pointerEvents = \"none\";\n\n    img.style.opacity =\n      Math.max(\n        0.25,\n        item.intensity / maxIntensity\n      );\n\n    container.appendChild(img);\n\n  });\n\n}\n\nappsmith.onReady(() => {\n  renderOverlays();\n});\n\nappsmith.onModelChange(() => {\n  renderOverlays();\n});"
+  },
+  "version": 1,
+  "widgetId": "3zwalu6ec5",
+  "widgetName": "MuscleHighlights"
+}

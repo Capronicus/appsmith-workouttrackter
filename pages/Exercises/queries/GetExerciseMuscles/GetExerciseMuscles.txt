@@ -1,0 +1,14 @@
+SELECT
+    m.name,
+    m.body_region,
+    em.intensity,
+    em.role
+FROM exercise_muscles em
+JOIN muscles m
+    ON m.id = em.muscle_id
+WHERE em.exercise_id =
+COALESCE(
+    {{ SelectExercise.selectedOptionValue || 0 }},
+    0
+)
+ORDER BY em.intensity DESC;

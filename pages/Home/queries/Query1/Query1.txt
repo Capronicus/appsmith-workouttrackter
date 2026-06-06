@@ -1,0 +1,9 @@
+SELECT
+    e.name AS exercise,
+    m.name AS muscle,
+    em.role,
+    em.intensity
+FROM exercise_muscles em
+JOIN exercises e ON e.id = em.exercise_id
+JOIN muscles m ON m.id = em.muscle_id
+ORDER BY e.name, em.intensity DESC;

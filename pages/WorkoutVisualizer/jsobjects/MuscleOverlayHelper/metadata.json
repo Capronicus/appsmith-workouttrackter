@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "6a14593c57b2571e58a6f1c9_a61a2e71-ebed-4df2-9632-3e40d5141208",
+  "id": "WorkoutVisualizer_MuscleOverlayHelper",
+  "unpublishedCollection": {
+    "name": "MuscleOverlayHelper",
+    "pageId": "WorkoutVisualizer",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

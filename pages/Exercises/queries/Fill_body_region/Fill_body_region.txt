@@ -1,0 +1,30 @@
+UPDATE muscles
+SET body_region =
+CASE name
+    WHEN 'Abs' THEN 'abs'
+    WHEN 'Biceps' THEN 'biceps'
+    WHEN 'Calves' THEN 'calves'
+    WHEN 'Chest' THEN 'chest'
+    WHEN 'Forearms' THEN 'forearms'
+
+    WHEN 'Front Delts' THEN 'front_delts'
+    WHEN 'Side Delts' THEN 'side_delts'
+    WHEN 'Rear Delts' THEN 'rear_delts'
+
+    WHEN 'Glutes' THEN 'glutes'
+    WHEN 'Hamstrings' THEN 'hamstrings'
+    WHEN 'Quads' THEN 'quads'
+
+    WHEN 'Lats' THEN 'lats'
+    WHEN 'Upper Back' THEN 'upper_back'
+    WHEN 'Lower Back' THEN 'lower_back'
+    WHEN 'Traps' THEN 'traps'
+
+    WHEN 'Neck' THEN 'neck'
+
+    WHEN 'Obliques' THEN 'obliques'
+
+    WHEN 'Triceps' THEN 'triceps'
+
+    WHEN 'Upper Chest' THEN 'upper_chest'
+END;

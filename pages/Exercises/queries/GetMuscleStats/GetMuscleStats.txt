@@ -1,0 +1,8 @@
+SELECT
+    m.name,
+    SUM(em.intensity) AS score
+FROM exercise_muscles em
+JOIN muscles m
+    ON m.id = em.muscle_id
+GROUP BY m.name
+ORDER BY score DESC;
