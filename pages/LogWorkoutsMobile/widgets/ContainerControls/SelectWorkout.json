@@ -67,7 +67,7 @@
   "placeholderText": "Select",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 27,
+  "rightColumn": 36,
   "serverSideFiltering": false,
   "shouldScrollContents": true,
   "sourceData": "{{GetWorkoutsForLog.data}}",
