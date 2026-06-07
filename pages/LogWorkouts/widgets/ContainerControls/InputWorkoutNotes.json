@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 9,
+  "bottomRow": 10,
   "boxShadow": "none",
   "defaultText": "{{appsmith.store.workoutNotes ?? ''}}",
   "dynamicBindingPathList": [
@@ -20,7 +20,7 @@
       "key": "defaultText"
     }
   ],
-  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "onTextChanged"
@@ -55,8 +55,6 @@
   "mobileTopRow": 0,
   "needsErrorInfo": false,
   "onTextChanged": "{{storeValue('workoutNotes', InputWorkoutNotes.text)}}",
-  "originalBottomRow": 9,
-  "originalTopRow": 1,
   "parentColumnSpace": 20.984375,
   "parentId": "pru4nz16ki",
   "parentRowSpace": 10,
@@ -66,7 +64,7 @@
   "rightColumn": 35,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 1,
+  "topRow": 4,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "80htd0j5ea",

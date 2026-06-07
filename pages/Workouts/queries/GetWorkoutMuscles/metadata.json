@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT\n    m.name,\n    m.body_region,\n    SUM(em.intensity) AS intensity\nFROM template_exercises te\nJOIN exercise_muscles em\n    ON em.exercise_id = te.exercise_id\nJOIN muscles m\n    ON m.id = em.muscle_id\nWHERE te.template_id = 1\nGROUP BY\n    m.name,\n    m.body_region\nORDER BY\n    intensity DESC;",
+      "body": "SELECT\n    m.name,\n    m.body_region,\n    SUM(em.intensity) AS intensity\nFROM template_exercises te\nJOIN exercise_muscles em\n    ON em.exercise_id = te.exercise_id\nJOIN muscles m\n    ON m.id = em.muscle_id\nWHERE te.template_id = {{ tblWorkouts.selectedRow.id }}\nGROUP BY\n    m.name,\n    m.body_region\nORDER BY\n    intensity DESC;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,7 +22,11 @@
       "name": "fitnessDB",
       "pluginId": "postgres-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "name": "GetWorkoutMuscles",
     "pageId": "Workouts",
     "runBehaviour": "AUTOMATIC",

@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 5,
+  "bottomRow": 7,
   "boxShadow": "none",
   "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  appsmith.store.selectedWorkoutId || '' ))(SelectWorkout.options, SelectWorkout.serverSideFiltering) }}",
   "dynamicBindingPathList": [
@@ -73,7 +73,7 @@
   "serverSideFiltering": false,
   "shouldScrollContents": true,
   "sourceData": "{{GetWorkoutsForLog.data}}",
-  "topRow": 1,
+  "topRow": 3,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "rr4ae1l174",

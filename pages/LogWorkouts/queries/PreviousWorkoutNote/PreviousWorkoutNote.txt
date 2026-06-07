@@ -1,6 +1,6 @@
-SELECT workout_notes
+SELECT workout_notes, completed_at
 FROM sessions
-WHERE template_id = {{ SelectWorkout.value ?? 0 }}
+WHERE template_id = {{ SelectWorkout.value }}
   AND workout_notes IS NOT NULL
   AND workout_notes <> ''
 ORDER BY completed_at DESC

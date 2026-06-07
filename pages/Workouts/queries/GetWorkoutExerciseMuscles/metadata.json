@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT\n    m.name,\n    m.body_region,\n    em.intensity\nFROM exercise_muscles em\nJOIN muscles m\n    ON m.id = em.muscle_id\nWHERE em.exercise_id = {{ tblWorkoutExercises.selectedRow.id }}\nORDER BY\n    em.intensity DESC;",
+      "body": "SELECT\n    m.name,\n    m.body_region,\n    em.intensity\nFROM exercise_muscles em\nJOIN muscles m\n    ON m.id = em.muscle_id\nWHERE em.exercise_id = {{ tblWorkoutExercises.selectedRow.exercise_id }}\nORDER BY em.intensity DESC;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

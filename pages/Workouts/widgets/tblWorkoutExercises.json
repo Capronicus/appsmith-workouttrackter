@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 59,
+  "bottomRow": 78,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "cachedTableData": {},
   "canFreezeColumn": true,
@@ -49,10 +49,11 @@
     "display_order": 106,
     "name": 207.99999999999994
   },
+  "compactMode": "SHORT",
   "customIsLoading": false,
   "customIsLoadingValue": "",
   "defaultPageSize": 0,
-  "defaultSelectedRowIndex": "1",
+  "defaultSelectedRowIndex": "",
   "defaultSelectedRowIndices": [
     0
   ],
@@ -121,7 +122,11 @@
       "key": "tableData"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onRowSelected"
+    }
+  ],
   "enableClientSideSearch": true,
   "endOfData": false,
   "evenRowColor": "#71717a",
@@ -148,8 +153,9 @@
   "multiRowSelection": false,
   "needsErrorInfo": false,
   "oddRowColor": "#71717a",
-  "originalBottomRow": 104,
-  "originalTopRow": 75,
+  "onRowSelected": "{{GetTemplateExercises.run();\nGetExerciseMuscles.run()}}",
+  "originalBottomRow": 78,
+  "originalTopRow": 30,
   "parentColumnSpace": 21.46875,
   "parentId": "0",
   "parentRowSpace": 10,

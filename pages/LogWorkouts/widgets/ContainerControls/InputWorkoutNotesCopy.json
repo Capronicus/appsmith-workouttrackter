@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "0.375rem",
-  "bottomRow": 9,
+  "bottomRow": 10,
   "boxShadow": "none",
   "defaultText": "{{ PreviousWorkoutNote.data?.[0]?.workout_notes || '' }}",
   "dynamicBindingPathList": [
@@ -14,7 +14,7 @@
       "key": "defaultText"
     }
   ],
-  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
@@ -45,18 +45,17 @@
   "mobileTopRow": 0,
   "needsErrorInfo": false,
   "onTextChanged": "",
-  "originalBottomRow": 9,
-  "originalTopRow": 1,
   "parentColumnSpace": 20.984375,
   "parentId": "pru4nz16ki",
   "parentRowSpace": 10,
+  "placeholderText": "previous session's remark",
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
   "rightColumn": 53,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 1,
+  "topRow": 4,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "oj7ysp17ew",

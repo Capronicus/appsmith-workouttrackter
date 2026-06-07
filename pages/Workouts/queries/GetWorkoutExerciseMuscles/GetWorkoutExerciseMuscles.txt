@@ -5,6 +5,5 @@ SELECT
 FROM exercise_muscles em
 JOIN muscles m
     ON m.id = em.muscle_id
-WHERE em.exercise_id = {{ tblWorkoutExercises.selectedRow.id }}
-ORDER BY
-    em.intensity DESC;
+WHERE em.exercise_id = {{ tblWorkoutExercises.selectedRow.exercise_id }}
+ORDER BY em.intensity DESC;
