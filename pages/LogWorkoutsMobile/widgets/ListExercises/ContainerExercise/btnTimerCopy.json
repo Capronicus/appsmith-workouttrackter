@@ -45,7 +45,7 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 16,
+  "rightColumn": 20,
   "text": "Skip",
   "topRow": 31,
   "type": "BUTTON_WIDGET",
