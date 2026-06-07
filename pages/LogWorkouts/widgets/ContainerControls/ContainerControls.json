@@ -9,7 +9,7 @@
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 130,
+      "bottomRow": 140,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -75,8 +75,8 @@
   "mobileRightColumn": 22,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "originalBottomRow": 24,
-  "originalTopRow": 11,
+  "originalBottomRow": 14,
+  "originalTopRow": 6,
   "parentColumnSpace": 21.46875,
   "parentId": "0",
   "parentRowSpace": 10,

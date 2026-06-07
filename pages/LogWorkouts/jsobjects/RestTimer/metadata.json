@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "6a14593c57b2571e58a6f1c9_d5121731-c0d2-450b-ad93-60bb7a408403",
+  "id": "LogWorkouts_RestTimer",
+  "unpublishedCollection": {
+    "name": "RestTimer",
+    "pageId": "LogWorkouts",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "intervalId",
+        "value": "null"
+      }
+    ]
+  }
+}

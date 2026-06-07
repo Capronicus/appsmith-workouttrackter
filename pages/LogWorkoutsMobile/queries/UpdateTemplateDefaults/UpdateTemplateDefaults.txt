@@ -1,0 +1,4 @@
+UPDATE template_exercises
+SET default_weight = {{appsmith.store.updatingWeight}},
+    default_reps = {{appsmith.store.updatingReps}}
+WHERE id = {{appsmith.store.updatingTemplateExerciseId}};

@@ -1,0 +1,13 @@
+INSERT INTO sessions (
+    template_id,
+    session_date,
+    completed_at,
+    workout_notes
+)
+VALUES (
+    {{SelectWorkout.value}},
+    CURRENT_DATE,
+    NOW(),
+    {{InputWorkoutNotes.text}}
+)
+RETURNING id;

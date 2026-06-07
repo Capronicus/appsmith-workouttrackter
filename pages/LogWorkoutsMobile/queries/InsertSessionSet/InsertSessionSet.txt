@@ -1,0 +1,10 @@
+INSERT INTO session_sets (session_id, exercise_id, set_number, reps, weight, feel, exercise_notes)
+VALUES (
+  {{appsmith.store.insertingSessionId}},
+  {{appsmith.store.insertingExerciseId}},
+  {{appsmith.store.insertingSetNum}},
+  {{appsmith.store.insertingReps}},
+  {{appsmith.store.insertingWeight}},
+  {{appsmith.store.insertingFeel}},
+  {{appsmith.store.insertingNotes}}
+);

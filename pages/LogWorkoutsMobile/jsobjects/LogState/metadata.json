@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "6a14593c57b2571e58a6f1c9_b5e16ebf-fd1a-461d-ba76-30dadee828e6",
+  "id": "LogWorkoutsMobile_LogState",
+  "unpublishedCollection": {
+    "name": "LogState",
+    "pageId": "LogWorkoutsMobile",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

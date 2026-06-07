@@ -1,0 +1,3 @@
+SELECT
+  '{{SelectWorkout.selectedOptionValue}}' as selected_option_value,
+  '{{SelectWorkout.value}}' as value

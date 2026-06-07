@@ -1,0 +1,24 @@
+SELECT 
+    te.id AS template_exercise_id,
+    te.exercise_id,
+    e.name,
+    e.image_url,
+    te.default_sets,
+    te.default_reps,
+    te.default_weight,
+    te.display_order,
+		e.notes,
+    (
+        SELECT ss.exercise_notes
+        FROM session_sets ss
+        JOIN sessions s ON s.id = ss.session_id
+        WHERE ss.exercise_id = te.exercise_id
+          AND ss.exercise_notes IS NOT NULL
+          AND ss.exercise_notes <> ''
+        ORDER BY s.completed_at DESC
+        LIMIT 1
+    ) AS previous_note
+FROM template_exercises te
+JOIN exercises e ON e.id = te.exercise_id
+WHERE te.template_id = {{ Number(SelectWorkout.value || 0) }}
+ORDER BY te.display_order;
